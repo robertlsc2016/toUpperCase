@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+
+    font-family: 'Varela Round', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgb(234, 247, 226);
+}
+
+body {
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 98vh;    
+}
+
+
+.conteiner {
+    display: grid;
+    grid-template-columns: auto 70vw auto;
+
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.tela-principal {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+}
+
+.textareas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    flex-direction: row;
+    width: 100%;
+    height: 60%;
+}
+
+
+.text-area-1, .text-area-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 49.4%;
+    height: 100%;
+
+    margin: 0 2%;
+}
+
+.text-area-1 label, .text-area-2 label{
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+
+#text-input, #text-output {
+    background-color: rgb(241, 241, 241);
+    resize: none;
+    padding: 2%;
+    width: 100%;
+    height: 90%;
+
+    border: 1px solid ;
+    border-radius: 10px;
+}
+
+.botoes-de-operações {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+
+    width: 100%;
+    height: 12%;
+}
+
+.botoes-de-operações button {
+    margin: 0 2%;
+    height: 30%;
+    width: 35%;
+
+    font-size: 1.1rem;
+    border-radius: 5px;
+
+    border: none;
+    cursor: pointer;
+
+    color: white;
+
+    background: rgb(66,38,116);
+    background: linear-gradient(209deg, rgba(66,38,116,1) 0%, rgba(82,31,218,1) 100%);
+    transition: 0.3s;
+}
+
+.botoes-de-operações button:hover{
+    width: 40%;
+
+    background: rgb(2,10,27);
+    background: linear-gradient(209deg, rgba(2,10,27,1) 0%, rgba(70,12,226,1) 100%);
+}
+
+#botao-copiar, #botao-colar {
+    height: 5%;
+    width: 30%;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 3%;
+    border: none;
+    cursor: pointer;
+    color: white;
+
+    background: rgb(66,38,116);
+    background: linear-gradient(209deg, rgba(66,38,116,1) 0%, rgba(82,31,218,1) 100%);
+    
+    transition: 0.5s;
+}
+
+#botao-copiar:hover, #botao-colar:hover {
+    width: 40%;
+    background: rgb(2,10,27);
+    background: linear-gradient(209deg, rgba(2,10,27,1) 0%, rgba(70,12,226,1) 100%);
+
+}
